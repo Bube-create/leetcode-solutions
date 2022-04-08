@@ -1,5 +1,7 @@
 // https://leetcode.com/problems/contains-duplicate/
 
+
+//first trial solution
 var containsDuplicate = function (nums) {
 	let newSet = [];
 	for (let i = 0; i < nums.length; i++) {
@@ -12,6 +14,8 @@ var containsDuplicate = function (nums) {
 	return false;
 };
 
+
+//second trial solution
 var containsDuplicate = function (nums) {
 	nums.sort();
 	for (let i = 0; i < nums.length - 1; i++) {
